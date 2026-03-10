@@ -43,8 +43,6 @@ O projeto também conta com documentação das etapas de desenvolvimento, inclui
 
 A documentação completa pode ser encontrada na pasta **/docs** do repositório.
 
----
-
 ## Status do Projeto
 
 🚧 Projeto em fase inicial de desenvolvimento.
@@ -59,5 +57,3 @@ Atualmente estão sendo realizadas:
 ## Observação
 
 Este projeto faz parte do meu portfólio de estudos na área de tecnologia, com foco no desenvolvimento web e na organização de projetos.
-
-## Estrutura do Projeto
