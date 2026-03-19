@@ -1,0 +1,478 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+     font-family: 'Poppins', sans-serif;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    justify-items: left;
+}
+
+/* HEADER */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #d9d9d9;
+    padding: 15px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 110px;
+}
+
+/* MENU */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 55px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* BOTÃO CONTATO */
+.btn-contato {
+    background-color: #2e6b3f;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    height: 105vh;
+    background: url('../img/bg-cruzeiro.jpg') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    max-width: 600px;
+    margin-top: 350px;
+}
+
+/* TITULO */
+.hero h1 {
+    font-size: 36px;
+    line-height: 1.3;
+}
+
+.hero span {
+    color: #222;
+    font-weight: bold;
+}
+
+.hero strong {
+    color: #2e6b3f;
+}
+
+/* LINHA */
+.linha {
+    width: 200px;
+    height: 4px;
+    background: #ffc107;
+    margin: 15px 0;
+}
+
+/* LISTA */
+.beneficios {
+    margin: 15px 0;
+    
+}
+
+.beneficios li {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+}
+
+/* BOTÕES */
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.btn-light {
+    background: white;
+    color: #2e6b3f;
+}
+
+.btn-green {
+    background: #3ca34d;
+    color: white;
+}
+
+/* HOVER */
+.btn:hover {
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+.estacionamento {
+    background: linear-gradient(180deg, #dfe6ec, #bfc9d4);
+    padding: 60px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f2a37;
+    margin-bottom: 30px;
+}
+
+.titulo span {
+    color: #3b6e8f;
+}
+
+.precos {
+    margin-top: 50px;
+}
+
+/* STEPS */
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.step {
+    background: #f2f4f7;
+    border: 2px solid #7cc08a;
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-weight: 600;
+    color: #000;
+}
+
+.arrow {
+    font-size: 22px;
+    color: #000;
+}
+
+/* FORM */
+.formulario {
+    margin-top: 30px;
+}
+
+.campo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.campo label {
+    width: 150px;
+    text-align: right;
+    font-weight: 600;
+}
+
+.campo input {
+    width: 180px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #555;
+}
+
+/* RESULTADO */
+.resultado {
+    margin-top: 40px;
+}
+
+.resultado p {
+    font-weight: bold;
+    color: #3b6e8f;
+    margin-bottom: 10px;
+}
+
+.box-resultado {
+    display: inline-block;
+    background: #3b5f77;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.localizacao {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.box-localizacao {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.info {
+    background: #d9d9d9;
+    padding: 30px;
+    width: 300px;
+    border-radius: 12px 0 0 12px;
+    border: 2px solid #5dbb63;
+    text-align: left;
+}
+
+.mapa {
+    width: 400px;
+    background: #eee;
+    border-radius: 0 12px 12px 0;
+    border: 2px solid #5dbb63;
+}
+
+.avaliacoes {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* CARDS */
+.cards-avaliacoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #e6e6e6;
+    padding: 20px;
+    width: 220px;
+    border-radius: 12px;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+}
+
+.stars {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+/* BENEFÍCIOS */
+.beneficios-reserva {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.beneficios div {
+    background: #2c3e50;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    border: 2px solid #3cb371;
+}
+
+.contato {
+    padding: 80px 20px;
+    background: linear-gradient(180deg, #5c6f82, #3f5366);
+    text-align: center;
+}
+
+.container-contato {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* LADO ESQUERDO */
+.info-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #3b5f77;
+    padding: 15px 25px;
+    border-radius: 12px;
+    color: white;
+    border: 1px solid #7fb3d5;
+    width: 260px;
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+/* FORMULÁRIO */
+.formulario-contato {
+    background: rgba(255,255,255,0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    width: 350px;
+}
+
+/* INPUT MODERNO (FLOAT LABEL) */
+.grupo {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.grupo input,
+.grupo textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: transparent;
+    color: white;
+    outline: none;
+    font-size: 14px;
+}
+
+.grupo label {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+/* ANIMAÇÃO */
+.grupo input:focus + label,
+.grupo input:valid + label,
+.grupo textarea:focus + label,
+.grupo textarea:valid + label {
+    top: -12px;
+    font-size: 12px;
+    color: #00ffcc;
+}
+
+/* BOTÃO */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    background: #1f2a37;
+    color: #ccc;
+    padding-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 20px 40px;
+}
+
+/* LOGO */
+.footer-logo h3 {
+    color: white;
+    font-size: 22px;
+}
+
+.footer-logo p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* LINKS */
+.footer-links h4,
+.footer-contato h4 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #00c6ff;
+}
+
+/* CONTATO */
+.footer-contato p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* LINHA FINAL */
+.footer-bottom {
+    border-top: 1px solid #444;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    color: #aaa;
+}

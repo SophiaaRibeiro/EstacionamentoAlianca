@@ -1,11 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Estacionamento Aliança</title>
 </head>
 <body>
-    
+     <!-- HEADER -->
+    <header>
+        <div class="container nav">
+            <img src="img/logoSemFundo.png" alt="Logo Aliança" class="logo">
+
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">COMO FUNCIONA</a></li>
+                    <li><a href="#">PREÇOS</a></li>
+                    <li><a href="#">LOCALIZAÇÃO</a></li>
+                    <li><a href="#">AVALIAÇÕES</a></li>
+                </ul>
+            </nav>
+
+            <a href="#" class="btn-contato">CONTATO</a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="overlay"></div>
+
+        <div class="container hero-content">
+            <h1>
+                SEJA BEM-VINDO(A) AO <br>
+                <span>ESTACIONAMENTO <strong>ALIANÇA</strong></span>
+            </h1>
+
+            <div class="linha"></div>
+
+            <ul class="beneficios">
+                <li>Estacione com segurança durante seu cruzeiro em Santos.</li>
+                <li>A poucos minutos do Porto de Santos.</li>
+                <li>Transfer gratuito até o terminal.</li>
+            </ul>
+
+            <div class="buttons">
+                <a href="#" class="btn btn-light">VER PREÇOS</a>
+                <a href="#" class="btn btn-green">RESERVAR</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="estacionamento">
+    <h2 class="titulo">COMO <span>FUNCIONA</span></h2>
+
+    <div class="steps">
+        <div class="step">Reserve online</div>
+        <span class="arrow">→</span>
+        <div class="step">Chegue ao estacionamento</div>
+        <span class="arrow">→</span>
+        <div class="step">Transfer até o porto</div>
+    </div>
+
+    <h2 class="titulo precos">PREÇOS</h2>
+
+    <div class="formulario">
+        <div class="campo">
+            <label>Data de entrada</label>
+            <input type="date">
+        </div>
+
+        <div class="campo">
+            <label>Data de saída</label>
+            <input type="date">
+        </div>
+
+        <div class="campo">
+            <label>Tipo de Veículo</label>
+            <input type="text" placeholder="Ex: Carro">
+        </div>
+    </div>
+
+    <div class="resultado">
+        <p>RESULTADO</p>
+        <div class="box-resultado">
+            Total da Reserva: R$ --
+        </div>
+    </div>
+</section>
+
+<section class="localizacao">
+    <h2 class="titulo">LOCALIZAÇÃO</h2>
+
+    <div class="box-localizacao">
+        <div class="info">
+            <p>📍 Rua São Francisco, 2345 - Centro, CEP 117384-98</p>
+            <p>🚐 Transfer incluso</p>
+        </div>
+
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.7038279373796!2d-46.32643327387292!3d-23.935539575447027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce0381e6e293a3%3A0x3390be856a144c1d!2sAlian%C3%A7a%20Park%20Estacionamento!5e0!3m2!1spt-BR!2sbr!4v1773935606708!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
+<section class="avaliacoes">
+    <h2 class="titulo">AVALIAÇÕES</h2>
+
+    <div class="cards-avaliacoes">
+
+        <div class="card">
+            <div class="stars">★★★★★</div>
+            <h4>Maria Claudia</h4>
+            <p>"Deixamos o carro 7 dias enquanto viajávamos de cruzeiro. Tudo perfeito."</p>
+        </div>
+
+        <div class="card">
+            <div class="stars">★★★★★</div>
+            <h4>Fernanda Lopes</h4>
+            <p>"Funcionários super educados"</p>
+        </div>
+
+        <div class="card">
+            <div class="stars">★★★★★</div>
+            <h4>Carlos Luis</h4>
+            <p>"Muito bem localizado, e perto do Porto de Santos"</p>
+        </div>
+
+        <div class="card">
+            <div class="stars">★★★★★</div>
+            <h4>Italo Silva</h4>
+            <p>"Adorei, foi uma experiência ótima. Grata"</p>
+        </div>
+
+    </div>
+
+    <div class="beneficios-reserva">
+        <div>Câmeras 24h</div>
+        <div>Área coberta</div>
+        <div>Perto do Porto</div>
+        <div>Alta Fidelidade</div>
+    </div>
+</section>
+
+<section class="contato">
+    <h2 class="titulo">CONTATO <span>RÁPIDO</span></h2>
+
+    <div class="container-contato">
+        
+        <!-- LADO ESQUERDO -->
+        <div class="info-contato">
+
+            <div class="box">
+                <span>📞</span>
+                <p>(13) 97407-8201</p>
+            </div>
+
+            <div class="box">
+                <span>📍</span>
+                <p>Rua São Francisco, 1234 - Centro</p>
+            </div>
+
+            <div class="box">
+                <span>📷</span>
+                <p>@EstacionamentoAlianca</p>
+            </div>
+
+        </div>
+
+        <!-- LADO DIREITO (FORMULÁRIO) -->
+        <div class="formulario-contato">
+
+            <form>
+                <div class="grupo">
+                    <input type="text" required>
+                    <label>Seu nome</label>
+                </div>
+
+                <div class="grupo">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="grupo">
+                    <input type="tel" required>
+                    <label>Telefone</label>
+                </div>
+
+                <div class="grupo">
+                    <textarea rows="4" required></textarea>
+                    <label>Mensagem</label>
+                </div>
+
+                <button type="submit">Enviar mensagem</button>
+            </form>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- LOGO / NOME -->
+        <div class="footer-logo">
+            <h3>Aliança</h3>
+            <p>Estacionamento seguro próximo ao porto.</p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-links">
+            <h4>Links</h4>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Preços</a></li>
+                <li><a href="#">Localização</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+
+        <!-- CONTATO -->
+        <div class="footer-contato">
+            <h4>Contato</h4>
+            <p>📞 (13) 97407-8201</p>
+            <p>📍 Rua São Francisco, 1234</p>
+            <p>📷 @EstacionamentoAlianca</p>
+        </div>
+
+    </div>
+
+    <!-- LINHA FINAL -->
+    <div class="footer-bottom">
+        <p>© 2026 Estacionamento Aliança. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
 </body>
 </html>
