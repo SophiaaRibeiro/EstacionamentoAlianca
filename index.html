@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>Estacionamento Aliança</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <title>Estacionamento Aliança</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 <body>
+    <!-- <div id="loader">
+        <div class="spinner"></div>
+    </div> -->
      <!-- HEADER -->
     <header>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
         <div class="container nav">
             <img src="img/logoSemFundo.png" alt="Logo Aliança" class="logo">
 
@@ -46,9 +51,10 @@
                 <li>Transfer gratuito até o terminal.</li>
             </ul>
 
-            <div class="buttons">
+            <div class="btn">
                 <a href="#" class="btn btn-light">VER PREÇOS</a>
                 <a href="#" class="btn btn-green">RESERVAR</a>
+                <!-- <button class="btn-premium">Reservar vaga</button> -->
             </div>
         </div>
     </section>
@@ -84,7 +90,7 @@
     </div>
 
     <div class="resultado">
-        <p>RESULTADO</p>
+        <h3  class="titulo">RESULTADO</h3>
         <div class="box-resultado">
             Total da Reserva: R$ --
         </div>
@@ -237,5 +243,9 @@
     </div>
 </footer>
 
+<a href="https://wa.me/5511999999999?text=Olá,%20quero%20reservar%20uma%20vaga" 
+   class="whatsapp" target="_blank">
+</a>
+<script src="script.js"></script>
 </body>
 </html>
