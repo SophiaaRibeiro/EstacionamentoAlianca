@@ -6,6 +6,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <title>Estacionamento Aliança</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
 <body>
     <!-- <div id="loader">
@@ -13,28 +14,29 @@
     </div> -->
      <!-- HEADER -->
     <header>
-        <div class="menu-toggle" onclick="toggleMenu()">
+        
+        <div class="container nav">
+            <div class="menu-toggle" onclick="toggleMenu()">
             ☰
         </div>
-        <div class="container nav">
             <img src="img/logoSemFundo.png" alt="Logo Aliança" class="logo">
 
             <nav>
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">COMO FUNCIONA</a></li>
-                    <li><a href="#">PREÇOS</a></li>
-                    <li><a href="#">LOCALIZAÇÃO</a></li>
-                    <li><a href="#">AVALIAÇÕES</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#como">COMO FUNCIONA</a></li>
+                    <li><a href="#preco">PREÇOS</a></li>                    
+                    <li><a href="#aval">AVALIAÇÕES</a></li>
+                    <li><a href="#loc">LOCALIZAÇÃO</a></li>
                 </ul>
             </nav>
 
-            <a href="#" class="btn-contato">CONTATO</a>
+            <a href="#ctt" class="btn-contato">CONTATO</a>
         </div>
     </header>
 
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="overlay"></div>
 
         <div class="container hero-content">
@@ -52,14 +54,14 @@
             </ul>
 
             <div class="btn">
-                <a href="#" class="btn btn-light">VER PREÇOS</a>
-                <a href="#" class="btn btn-green">RESERVAR</a>
+                <a href="#preco" class="btn btn-light">VER PREÇOS</a>
+                <a href="https://wa.me/5513974078201?text=Olá,%20quero%20reservar%20uma%20vaga" class="btn btn-green">RESERVAR</a>
                 <!-- <button class="btn-premium">Reservar vaga</button> -->
             </div>
         </div>
     </section>
 
-    <section class="estacionamento">
+    <section class="estacionamento" id="como">
     <h2 class="titulo">COMO <span>FUNCIONA</span></h2>
 
     <div class="steps">
@@ -68,52 +70,52 @@
         <div class="step">Chegue ao estacionamento</div>
         <span class="arrow">→</span>
         <div class="step">Transfer até o porto</div>
+         <span class="arrow">→</span>
+        <div class="step">Seu carro seguro até o fim da viagem</div>
     </div>
 
-    <h2 class="titulo precos">PREÇOS</h2>
+    <h2 class="titulo precos">PREÇ<span>OS</span></h2>
 
-    <div class="formulario">
-        <div class="campo">
-            <label>Data de entrada</label>
-            <input type="date">
-        </div>
+    <div id="preco" class="formulario">
 
-        <div class="campo">
-            <label>Data de saída</label>
-            <input type="date">
-        </div>
+        <div class="campo select-box">
+        <label>Data de entrada</label>
+        <input type="date" id="entrada">
+    </div>
 
-        <div class="campo">
+    <div class="campo select-box">
+        <label>Data de saída</label>
+        <input type="date" id="saida">
+    </div>
+
+        <div class="campo select-box">
             <label>Tipo de Veículo</label>
-            <input type="text" placeholder="Ex: Carro">
+
+            <select name="veiculo" id="veiculo">
+                <option value="">Selecione</option>
+                <option value="10">Carro - R$10/dia</option>
+                <option value="5">Moto - R$5/dia</option>
+                <option value="15">SUV - R$15/dia</option>
+            </select>          
+             <span class="arrow-select">▼</span>  
         </div>
+
     </div>
 
     <div class="resultado">
         <h3  class="titulo">RESULTADO</h3>
-        <div class="box-resultado">
+        <!-- <div class="box-resultado">
             Total da Reserva: R$ --
+        </div> -->
+        <div class="resultado-preco">
+         <p>Total: <strong id="total">R$ 0,00</strong></p>
         </div>
     </div>
 </section>
 
-<section class="localizacao">
-    <h2 class="titulo">LOCALIZAÇÃO</h2>
 
-    <div class="box-localizacao">
-        <div class="info">
-            <p>📍 Rua São Francisco, 2345 - Centro, CEP 117384-98</p>
-            <p>🚐 Transfer incluso</p>
-        </div>
-
-        <div class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.7038279373796!2d-46.32643327387292!3d-23.935539575447027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce0381e6e293a3%3A0x3390be856a144c1d!2sAlian%C3%A7a%20Park%20Estacionamento!5e0!3m2!1spt-BR!2sbr!4v1773935606708!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </div>
-</section>
-
-<section class="avaliacoes">
-    <h2 class="titulo">AVALIAÇÕES</h2>
+<section class="avaliacoes" id="aval">
+    <h2 class="titulo">AVALIAÇ<span>ÕES</span></h2>
 
     <div class="cards-avaliacoes">
 
@@ -151,7 +153,48 @@
     </div>
 </section>
 
-<section class="contato">
+<section class="localizacao" id="loc">
+
+    <h2 class="titulo">LOCALIZ<span>AÇÃO</span></h2>
+
+    <div class="box-localizacao">
+
+        <!-- INFO -->
+        <div class="info">
+
+            <h3>📍 Onde estamos</h3>
+            <address>Av. São Francisco, 248 - Vila Nova, Santos - SP, 11013-202</address>
+            <p>Centro - Santos/SP</p>
+
+            <h4>🕒 Horário</h4>
+            <p>24 horas por dia</p>
+
+            <h4>🚗 Fácil acesso</h4>
+            <p>Próximo ao porto e principais avenidas</p>
+
+        </div>
+
+        <!-- MAPA -->
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.7038279373796!2d-46.32643327387292!3d-23.935539575447027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce0381e6e293a3%3A0x3390be856a144c1d!2sAlian%C3%A7a%20Park%20Estacionamento!5e0!3m2!1spt-BR!2sbr!4v1773935606708!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        </div>
+
+        <!-- CARD EXTRA 
+        <div class="card-destaque">
+            <h3>🔒 Segurança 24h</h3>
+            <p>Câmeras em todo o estacionamento</p>
+            <p>Monitoramento constante</p>
+            <p>Ambiente seguro para seu veículo</p>
+        </div>
+        -->
+
+    </div>
+
+</section>
+
+<section class="contato" id="ctt">
     <h2 class="titulo">CONTATO <span>RÁPIDO</span></h2>
 
     <div class="container-contato">
@@ -166,7 +209,7 @@
 
             <div class="box">
                 <span>📍</span>
-                <p>Rua São Francisco, 1234 - Centro</p>
+                <address>Av. São Francisco, 248 - Vila Nova, Santos - SP, 11013-202</address>
             </div>
 
             <div class="box">
@@ -200,7 +243,10 @@
                     <label>Mensagem</label>
                 </div>
 
-                <button type="submit">Enviar mensagem</button>
+                <div class="btn-mensagem">
+                     <button type="submit">Enviar mensagem</button>
+                </div>
+               
             </form>
 
         </div>
@@ -220,10 +266,12 @@
         <div class="footer-links">
             <h4>Links</h4>
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Preços</a></li>
-                <li><a href="#">Localização</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#home">Como Funciona</a></li>
+                <li><a href="#preco">Preços</a></li>
+                <li><a href="#home">Avaliações</a></li>
+                <li><a href="#loc">Localização</a></li>
+                <li><a href="#ctt">Contato</a></li>
             </ul>
         </div>
 
@@ -231,21 +279,21 @@
         <div class="footer-contato">
             <h4>Contato</h4>
             <p>📞 (13) 97407-8201</p>
-            <p>📍 Rua São Francisco, 1234</p>
+            <address>Av. São Francisco, 248 - Vila Nova, Santos - SP, 11013-202</address>
             <p>📷 @EstacionamentoAlianca</p>
         </div>
 
     </div>
-
     <!-- LINHA FINAL -->
     <div class="footer-bottom">
         <p>© 2026 Estacionamento Aliança. Todos os direitos reservados.</p>
     </div>
 </footer>
 
-<a href="https://wa.me/5511999999999?text=Olá,%20quero%20reservar%20uma%20vaga" 
+<a href="https://wa.me/5513974078201?text=Olá,%20quero%20reservar%20uma%20vaga" 
    class="whatsapp" target="_blank">
+   <i class="fa-brands fa-whatsapp"></i>
 </a>
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
