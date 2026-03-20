@@ -27,6 +27,11 @@ address{
     font-style: normal;
 }
 
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
 /* CONTAINER */
 .container {
     width: 90%;
@@ -68,7 +73,7 @@ header {
 }
 
 .logo {
-    height: 80px;
+    height: 120px;
 }
 
 /* MENU */
@@ -82,6 +87,7 @@ nav a {
     text-decoration: none;
     color: var(--text);
     font-weight: 500;
+    font-size:1.2rem;
 }
 
 nav a:hover {
@@ -96,7 +102,9 @@ nav a:hover {
     border-radius: 20px;
     text-decoration: none;
     transition: 0.5s;
+    font-size:1.2rem;
 }
+
 
 .btn-contato:hover{
     transform: scale(1.1);
@@ -374,15 +382,16 @@ nav a:hover {
     border-radius: 16px;
     text-align: left;
     max-width: 320px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 12px;
-
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-
     transition: 0.3s;
+}
+
+.info:hover{
+    transform: translateY(-5px);
 }
 
 /* MAPA */
@@ -603,6 +612,16 @@ button:hover {
      transform: scale(1.1);
 }
 
+i {
+    color: var(--accent);
+    margin-right: 8px;
+    transition: 0.3s;
+}
+
+i:hover {
+    transform: scale(1.2);
+}
+
 .menu-toggle {
     display: none;
     font-size: 28px;
@@ -610,31 +629,6 @@ button:hover {
     color: white;
     padding: 30px;
 }
-
-/* MOBILE */
-@media (max-width: 768px) {
-
-    .menu-toggle {
-        display: block;
-    }
-
-    nav ul {
-        position: absolute;
-        top: 80px;
-        right: 0;
-        background: #1e293b;
-        width: 200px;
-        flex-direction: column;
-        display: none;
-        padding: 20px;
-        border-radius: 10px;
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-}
-
 
 .whatsapp {
     position: fixed;
@@ -658,6 +652,10 @@ button:hover {
 .whatsapp:hover {
     transform: scale(1.1);
     box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+.whatsapp i {
+    color: white;
 }
 
 /* FOOTER */
@@ -687,6 +685,7 @@ button:hover {
     margin-top:30px;
     padding: 15px;
 }
+
 
 
 @media (max-width: 768px) {   
@@ -759,6 +758,35 @@ button:hover {
     .card {
         width: 100%;
         max-width: 300px;
+    }
+
+     .menu-toggle {
+        display: block;        
+    }
+
+    .btn-contato{
+        font-size: 1rem;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #1e293b;
+        width: 200px;
+        flex-direction: column;
+        display: none;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    nav ul.active {
+        display: flex;      
+        padding: 20px;  
+    }
+
+    nav ul li a{        
+        font-size: 1rem;
     }
 }
 
