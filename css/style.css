@@ -7,6 +7,7 @@
 
 html{
     scroll-behavior: smooth;
+     scroll-padding-top: 120px;
 }
 
 :root {
@@ -92,6 +93,12 @@ nav a {
 
 nav a:hover {
     color: var(--accent);
+}
+
+nav a.active {
+    color:  var(--accent);
+    font-weight: bold;
+    border-bottom: 2px solid #25D366;
 }
 
 /* BOTÃO CONTATO */
@@ -193,10 +200,11 @@ nav a:hover {
 
 /* SECTIONS */
 .estacionamento,
+.preco,
 .localizacao,
 .avaliacoes,
 .contato {
-    padding: 80px 20px;
+    padding: 100px 20px;
     text-align: center;
 }
 
@@ -656,6 +664,7 @@ i:hover {
 
 .whatsapp i {
     color: white;
+    margin: 0;
 }
 
 /* FOOTER */
