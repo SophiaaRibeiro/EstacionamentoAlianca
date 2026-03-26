@@ -249,6 +249,11 @@ nav a.active {
     margin-top:15px;
 }
 
+.arrow::after {
+    content: "→";
+    font-size: 20px;
+}
+
 
 /* FORM */
 .campo {
@@ -777,6 +782,10 @@ i:hover {
         font-size: 1rem;
     }
 
+    .preco{
+        text-align: center;
+    }
+
     nav ul {
         position: absolute;
         top: 80px;
@@ -796,6 +805,23 @@ i:hover {
 
     nav ul li a{        
         font-size: 1rem;
+    }
+
+    .whatsapp i {
+        margin: 0;
+    }
+
+    .logo{
+        height: 90px;
+    }
+
+    header{
+        margin: 0;
+        padding: 5px;
+    }
+
+    .arrow::after {
+        content: "↓";
     }
 }
 

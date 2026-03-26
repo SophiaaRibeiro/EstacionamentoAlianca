@@ -69,3 +69,25 @@ window.addEventListener("scroll", () => {
 
 });
 
+const menu = document.querySelector("nav ul");
+const toggle = document.querySelector(".menu-toggle");
+
+function toggleMenu() {
+    menu.classList.toggle("active");
+}
+
+document.addEventListener("click", (e) => {
+    if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+        menu.classList.remove("active");
+    }
+});
+
+window.addEventListener("scroll", () => {
+    menu.classList.remove("active");
+});
+
+document.querySelectorAll("nav ul li a").forEach(link => {
+    link.addEventListener("click", () => {
+        menu.classList.remove("active");
+    });
+});
